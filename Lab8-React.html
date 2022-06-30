@@ -83,19 +83,19 @@
             height: "100%",
         }
 
-        const titulo = {
+        const title = {
             justifyContent: "center",
             color: "white",
             marginBottom: "15px"
         }
 
-        const ejemplo = {
+        const cardStyle = {
             width: "130px",
             height: "100%",
             position: "absolute"
         }
 
-        const hello = {
+        const containerCards = {
             display: "grid",
             gridTemplateColumns: "auto auto auto auto",
             height: "620px",
@@ -103,7 +103,7 @@
             gridRowGap: "10px",
             gridColumnGap: "10px",
         }
-        const hola2 = {
+        const titleContainer = {
             textAlign: "center",
         }
 
@@ -118,74 +118,74 @@
         }
           return (
             <div style={style}>
-                <div style = {hola2}> 
-                    <div ><h1 style = {titulo}> Memoria </h1></div>
-                    <div ><h2 style ={titulo}>Moviminetos: {this.state.contador}</h2></div>
+                <div style = {titleContainer}> 
+                    <div ><h1 style = {title}> Memoria </h1></div>
+                    <div ><h2 style ={title}>Moviminetos: {this.state.contador}</h2></div>
                 </div>
-                <div style={hello} className="memory-game">
+                <div style={containerCards} className="memory-game">
                     <div id = "Par1A" onClick={this.flipCard.bind(this, "Par1A")} className = "memory-card" style= {carta} data-card = "pareja1">
-                        <img className = "front" src = "./Assets/PngItem_2653815.png" alt = "Pareja1" style = {ejemplo}></img>
-                        <img className = "back" src = "https://cdn2.bigcommerce.com/n-d57o0b/1kujmu/products/297/images/924/2D__57497.1440113502.1280.1280.png?c=2" alt = "JSatras" style = {ejemplo}></img>
+                        <img className = "front" src = "./Assets/PngItem_2653815.png" alt = "Pareja1" style = {cardStyle}></img>
+                        <img className = "back" src = "https://cdn2.bigcommerce.com/n-d57o0b/1kujmu/products/297/images/924/2D__57497.1440113502.1280.1280.png?c=2" alt = "JSatras" style = {cardStyle}></img>
                     </div>
                     <div id = "Par1B" onClick={this.flipCard.bind(this, "Par1B")} className = "memory-card" style= {carta} data-card = "pareja1">
-                        <img className = "front" src = "./Assets/PngItem_2653815.png" alt = "Pareja1" style = {ejemplo}></img>
-                        <img className = "back" src = "https://cdn2.bigcommerce.com/n-d57o0b/1kujmu/products/297/images/924/2D__57497.1440113502.1280.1280.png?c=2" alt = "JSatras" style = {ejemplo}></img>
+                        <img className = "front" src = "./Assets/PngItem_2653815.png" alt = "Pareja1" style = {cardStyle}></img>
+                        <img className = "back" src = "https://cdn2.bigcommerce.com/n-d57o0b/1kujmu/products/297/images/924/2D__57497.1440113502.1280.1280.png?c=2" alt = "JSatras" style = {cardStyle}></img>
                     </div>
                     <div id = "Par2A" onClick={this.flipCard.bind(this, "Par2A")} className = "memory-card" style= {carta} data-card = "pareja2">
-                        <img className = "front" src = "./Assets/PngItem_2653815.png" alt = "Pareja2" style = {ejemplo}></img>
-                        <img className = "back" src = "https://cdn2.bigcommerce.com/n-d57o0b/1kujmu/products/297/images/925/3C__99122.1440113509.1280.1280.png?c=2" alt = "JSatras" style = {ejemplo}></img>
+                        <img className = "front" src = "./Assets/PngItem_2653815.png" alt = "Pareja2" style = {cardStyle}></img>
+                        <img className = "back" src = "https://cdn2.bigcommerce.com/n-d57o0b/1kujmu/products/297/images/925/3C__99122.1440113509.1280.1280.png?c=2" alt = "JSatras" style = {cardStyle}></img>
                     </div>
                     <div id = "Par2B" onClick={this.flipCard.bind(this, "Par2B")} className = "memory-card" style= {carta} data-card = "pareja2">
-                        <img className = "front" src = "./Assets/PngItem_2653815.png" alt = "Pareja2" style = {ejemplo}></img>
-                        <img className = "back" src = "https://cdn2.bigcommerce.com/n-d57o0b/1kujmu/products/297/images/925/3C__99122.1440113509.1280.1280.png?c=2" alt = "JSatras" style = {ejemplo}></img>
+                        <img className = "front" src = "./Assets/PngItem_2653815.png" alt = "Pareja2" style = {cardStyle}></img>
+                        <img className = "back" src = "https://cdn2.bigcommerce.com/n-d57o0b/1kujmu/products/297/images/925/3C__99122.1440113509.1280.1280.png?c=2" alt = "JSatras" style = {cardStyle}></img>
                     </div>
                     <div id = "Par3A" onClick={this.flipCard.bind(this, "Par3A")} className = "memory-card" style= {carta} data-card = "pareja3">
-                        <img className = "front" src = "./Assets/PngItem_2653815.png "  alt = "Pareja3" style = {ejemplo}></img>
-                        <img className = "back" src = "https://cdn2.bigcommerce.com/n-d57o0b/1kujmu/products/297/images/926/4H__83243.1440113515.1280.1280.png?c=2" alt = "JSatras" style = {ejemplo}></img>
+                        <img className = "front" src = "./Assets/PngItem_2653815.png "  alt = "Pareja3" style = {cardStyle}></img>
+                        <img className = "back" src = "https://cdn2.bigcommerce.com/n-d57o0b/1kujmu/products/297/images/926/4H__83243.1440113515.1280.1280.png?c=2" alt = "JSatras" style = {cardStyle}></img>
                     </div>
                     <div id = "Par3B" onClick={this.flipCard.bind(this, "Par3B")} className = "memory-card" style= {carta} data-card = "pareja3">
-                        <img className = "front" src = " ./Assets/PngItem_2653815.png"  alt = "Pareja3" style = {ejemplo}></img>
-                        <img className = "back" src = "https://cdn2.bigcommerce.com/n-d57o0b/1kujmu/products/297/images/926/4H__83243.1440113515.1280.1280.png?c=2" alt = "JSatras"style = {ejemplo} ></img>
+                        <img className = "front" src = " ./Assets/PngItem_2653815.png"  alt = "Pareja3" style = {cardStyle}></img>
+                        <img className = "back" src = "https://cdn2.bigcommerce.com/n-d57o0b/1kujmu/products/297/images/926/4H__83243.1440113515.1280.1280.png?c=2" alt = "JSatras"style = {cardStyle} ></img>
                     </div> 
                     <div id = "Par4A" onClick={this.flipCard.bind(this, "Par4A")} className = "memory-card" style= {carta} data-card = "pareja4">
-                        <img className = "front" src = "./Assets/PngItem_2653815.png " alt = "Pareja4" style = {ejemplo}></img>
-                        <img className = "back" src = "https://cdn2.bigcommerce.com/n-d57o0b/1kujmu/products/297/images/927/5S__90574.1440113521.1280.1280.png?c=2" alt = "JSatras" style = {ejemplo}></img>
+                        <img className = "front" src = "./Assets/PngItem_2653815.png " alt = "Pareja4" style = {cardStyle}></img>
+                        <img className = "back" src = "https://cdn2.bigcommerce.com/n-d57o0b/1kujmu/products/297/images/927/5S__90574.1440113521.1280.1280.png?c=2" alt = "JSatras" style = {cardStyle}></img>
                     </div>
                     <div id = "Par4B" onClick={this.flipCard.bind(this, "Par4B")} className = "memory-card" style= {carta} data-card = "pareja4">
-                        <img className = "front" src = "./Assets/PngItem_2653815.png " alt = "Pareja4" style = {ejemplo}></img>
-                        <img className = "back" src = "https://cdn2.bigcommerce.com/n-d57o0b/1kujmu/products/297/images/927/5S__90574.1440113521.1280.1280.png?c=2" alt = "JSatras" style = {ejemplo}></img>
+                        <img className = "front" src = "./Assets/PngItem_2653815.png " alt = "Pareja4" style = {cardStyle}></img>
+                        <img className = "back" src = "https://cdn2.bigcommerce.com/n-d57o0b/1kujmu/products/297/images/927/5S__90574.1440113521.1280.1280.png?c=2" alt = "JSatras" style = {cardStyle}></img>
                     </div>
                     <div id = "Par5A" onClick={this.flipCard.bind(this, "Par5A")} className = "memory-card" style= {carta} data-card = "pareja5">
-                        <img className = "front" src = " ./Assets/PngItem_2653815.png" alt = "Pareja5" style = {ejemplo}></img>
-                        <img className = "back" src = "https://cdn2.bigcommerce.com/n-d57o0b/1kujmu/products/297/images/935/AS__68652.1440113599.1280.1280.png?c=2" alt = "JSatras" style = {ejemplo}></img>
+                        <img className = "front" src = " ./Assets/PngItem_2653815.png" alt = "Pareja5" style = {cardStyle}></img>
+                        <img className = "back" src = "https://cdn2.bigcommerce.com/n-d57o0b/1kujmu/products/297/images/935/AS__68652.1440113599.1280.1280.png?c=2" alt = "JSatras" style = {cardStyle}></img>
                     </div>
                     <div id = "Par5B" onClick={this.flipCard.bind(this, "Par5B")} className = "memory-card" style= {carta} data-card = "pareja5">
-                        <img className = "front" src = "./Assets/PngItem_2653815.png " alt = "Pareja5" style = {ejemplo}></img>
-                        <img className = "back" src = "https://cdn2.bigcommerce.com/n-d57o0b/1kujmu/products/297/images/935/AS__68652.1440113599.1280.1280.png?c=2" alt = "JSatras" style = {ejemplo}></img>
+                        <img className = "front" src = "./Assets/PngItem_2653815.png " alt = "Pareja5" style = {cardStyle}></img>
+                        <img className = "back" src = "https://cdn2.bigcommerce.com/n-d57o0b/1kujmu/products/297/images/935/AS__68652.1440113599.1280.1280.png?c=2" alt = "JSatras" style = {cardStyle}></img>
                     </div>
                     <div id = "Par6A" onClick={this.flipCard.bind(this, "Par6A")} className = "memory-card" style= {carta} data-card = "pareja6">
-                        <img className = "front" src = "./Assets/PngItem_2653815.png " alt = "Pareja6" style = {ejemplo}></img>
-                        <img className = "back" src = "https://cdn2.bigcommerce.com/n-d57o0b/1kujmu/products/297/images/928/6D__92916.1440113530.1280.1280.png?c=2" alt = "JSatras" style = {ejemplo}></img>
+                        <img className = "front" src = "./Assets/PngItem_2653815.png " alt = "Pareja6" style = {cardStyle}></img>
+                        <img className = "back" src = "https://cdn2.bigcommerce.com/n-d57o0b/1kujmu/products/297/images/928/6D__92916.1440113530.1280.1280.png?c=2" alt = "JSatras" style = {cardStyle}></img>
                     </div>
                     <div id = "Par6B" onClick={this.flipCard.bind(this, "Par6B")} className = "memory-card" style= {carta} data-card = "pareja6">
-                        <img className = "front" src = "./Assets/PngItem_2653815.png " alt = "Pareja6" style = {ejemplo}></img>
-                        <img className = "back" src = "https://cdn2.bigcommerce.com/n-d57o0b/1kujmu/products/297/images/928/6D__92916.1440113530.1280.1280.png?c=2" alt = "JSatras" style = {ejemplo}></img>
+                        <img className = "front" src = "./Assets/PngItem_2653815.png " alt = "Pareja6" style = {cardStyle}></img>
+                        <img className = "back" src = "https://cdn2.bigcommerce.com/n-d57o0b/1kujmu/products/297/images/928/6D__92916.1440113530.1280.1280.png?c=2" alt = "JSatras" style = {cardStyle}></img>
                     </div>
                     <div id = "Par7A" onClick={this.flipCard.bind(this, "Par7A")} className = "memory-card" style= {carta} data-card = "pareja7">
-                        <img className = "front" src = "./Assets/PngItem_2653815.png " alt = "Pareja7" style = {ejemplo}></img>
-                        <img className = "back" src = "https://cdn2.bigcommerce.com/n-d57o0b/1kujmu/products/297/images/929/7C__93490.1440113539.1280.1280.png?c=2" alt = "JSatras" style = {ejemplo}></img>
+                        <img className = "front" src = "./Assets/PngItem_2653815.png " alt = "Pareja7" style = {cardStyle}></img>
+                        <img className = "back" src = "https://cdn2.bigcommerce.com/n-d57o0b/1kujmu/products/297/images/929/7C__93490.1440113539.1280.1280.png?c=2" alt = "JSatras" style = {cardStyle}></img>
                     </div>
                     <div id = "Par7B" onClick={this.flipCard.bind(this, "Par7B")} className = "memory-card" style= {carta} data-card = "pareja7">
-                        <img className = "front" src = "./Assets/PngItem_2653815.png " alt = "Pareja7" style = {ejemplo}></img>
-                        <img className = "back" src = "https://cdn2.bigcommerce.com/n-d57o0b/1kujmu/products/297/images/929/7C__93490.1440113539.1280.1280.png?c=2" alt = "JSatras" style = {ejemplo}></img>
+                        <img className = "front" src = "./Assets/PngItem_2653815.png " alt = "Pareja7" style = {cardStyle}></img>
+                        <img className = "back" src = "https://cdn2.bigcommerce.com/n-d57o0b/1kujmu/products/297/images/929/7C__93490.1440113539.1280.1280.png?c=2" alt = "JSatras" style = {cardStyle}></img>
                     </div>
                     <div id = "Par8A" onClick={this.flipCard.bind(this, "Par8A")} className = "memory-card" style= {carta} data-card = "pareja8">
-                        <img className = "front" src = "./Assets/PngItem_2653815.png " alt = "Pareja8" style = {ejemplo}></img>
-                        <img className = "back" src = "https://cdn2.bigcommerce.com/n-d57o0b/1kujmu/products/297/images/930/8S__27839.1440113555.1280.1280.png?c=2" alt = "JSatras" style = {ejemplo}></img>
+                        <img className = "front" src = "./Assets/PngItem_2653815.png " alt = "Pareja8" style = {cardStyle}></img>
+                        <img className = "back" src = "https://cdn2.bigcommerce.com/n-d57o0b/1kujmu/products/297/images/930/8S__27839.1440113555.1280.1280.png?c=2" alt = "JSatras" style = {cardStyle}></img>
                     </div>
                     <div id = "Par8B" onClick={this.flipCard.bind(this, "Par8B")} className = "memory-card" style= {carta} data-card = "pareja8">
-                        <img className = "front" src = "./Assets/PngItem_2653815.png " alt = "Pareja8" style = {ejemplo}></img>
-                        <img className = "back" src = "https://cdn2.bigcommerce.com/n-d57o0b/1kujmu/products/297/images/930/8S__27839.1440113555.1280.1280.png?c=2" alt = "JSatras" style = {ejemplo}></img>
+                        <img className = "front" src = "./Assets/PngItem_2653815.png " alt = "Pareja8" style = {cardStyle}></img>
+                        <img className = "back" src = "https://cdn2.bigcommerce.com/n-d57o0b/1kujmu/products/297/images/930/8S__27839.1440113555.1280.1280.png?c=2" alt = "JSatras" style = {cardStyle}></img>
                     </div>
                 </div>
             </div>
