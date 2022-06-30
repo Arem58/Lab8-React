@@ -1,3 +1,7 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 .memory-card.flip{
     transform: rotateY(180deg);
 }
@@ -20,4 +24,9 @@
 }
 body{
     background-image: url("https://i.pinimg.com/originals/22/4b/e4/224be4442536b57e6eaba73c8e19b255.jpg");
+    height: 100%;
+}
+
+.body-size{
+    height:100vh
 }
